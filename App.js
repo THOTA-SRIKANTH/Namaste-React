@@ -1,35 +1,75 @@
 
-/**
- * 
- * 
- */
+    import React from "react";
+    import ReactDOM from "react-dom/client";
+
+  
+
+const elem = <span> this span  react element</span>
+
+    // const heading  =  (
+    //     <h1  className="head">
+           
+    //         this react jsx element 
+    //         {elem}
+    //     </h1> // it  is an react element
+    // );
 
 
-const parent = React.createElement("div" ,{id:'parent'} ,[
-    React.createElement("div",{id:'child-1'} ,[
-        React.createElement("h1" ,{} ,"I am chilld-1"),  React.createElement("h2" ,{} ,"I am chilld-2")
-    ]
-        )
-,React.createElement("div",{id:'child-2'} ,[
-    React.createElement("h1" ,{} ,"I am chilld-3"),  React.createElement("h2" ,{} ,"I am chilld-4")
-]
-    )]
-    )
+    
+  
+
+    //React components
+
+    //class based components
+
+    //functional based components; 
+    const HeadingComponent = () => (
+
+        // it return jsx element;
+         <h1>Namaste react functional components</h1>
+
+    );
 
 
-// const heading = React.createElement('h1' ,{id:"heading"}  ,"hellow world using React");
+    var name = "srikanth"
+    // functional component
+   
+
+    //this is javaScript function;
+
+    // const fn = ()=>{ 
+    //     return true;
+
+    // };
 
 
 
+    const Title  = () => (
+      
+        <h1  className="head">
+            Namaste React using jsx-❤️
+        </h1> // it  is an react element
+    );
 
-console.log(parent); //here heading is an object
 
 
+    const HeadingComponent2 = () => (
 
+        
 
-//create root;
+        <div id="container">
+         <h1>{name}</h1>
+         {/* {heading} */}
+         {Title()}
+         <Title></Title>
+         <Title />
+             <h1>
+                 namaste react in the functional componemt
+             </h1>
+         </div>
+     );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+    const root =  ReactDOM.createRoot(document.getElementById("root"));
 
-//inject that heading into root
-root.render(parent)
+    root.render(<HeadingComponent2></HeadingComponent2>);
+  
