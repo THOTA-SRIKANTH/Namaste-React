@@ -14,10 +14,6 @@ const elem = <span> this span  react element</span>
     //     </h1> // it  is an react element
     // );
 
-
-    
-  
-
     //React components
 
     //class based components
