@@ -3,14 +3,19 @@
     justify-content: space-between;
     border: 1px solid black ;
       /* padding: 0.5px; */
+     
 }
 
 .logo{
-    width: 200px;
+    width: 80px;
+    height:50px ; 
+    margin-left: -10px;
+
 }
-.nav-items  ul{
+.nav-items  ul {
     display: flex;
     font-size: 24px;
+   
     
 
 }
@@ -18,20 +23,24 @@
 
 }
 .nav-items >ul >li{
-  padding: 10px;
+
+  padding:10px;
   margin: 10px;
+
   list-style-type: none;
 }
 
 .res-container{
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
 }
 .res-card{
     
     /* border: 2px solid black; */
     margin: 5px;
-    width: 200px;
+    /* width: 200px; */
+    width: calc(15% - 10px); 
     /* height: 350px; */
     border-radius: 5px;
     padding: 5px;    
@@ -54,3 +63,8 @@
     /* padding: 2px; */
    
 }
+.filter-btn {
+    padding: 10px !important;
+    margin: 10px !important;
+    /* cursor: pointer; */
+  }

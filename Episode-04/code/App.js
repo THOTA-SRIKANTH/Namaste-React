@@ -21,6 +21,13 @@
      * 
      */
 
+
+
+
+
+
+
+
     const resList = [
         {
           type: 'restaurant',
@@ -2073,6 +2080,7 @@
                     <img className="logo" src={logo}/>
                 </div>
 
+
                 <div className="nav-items">
                     <ul>
                         <li>Home</li>
@@ -2087,7 +2095,12 @@
         );
     }
 
-    // const styleCard =;
+
+
+
+
+
+
 
     const RestaurentCard = (props) =>{
 
@@ -2101,8 +2114,7 @@
             deliveryTime ,
             avgRating
         } = resData?.data
-        
-        
+      
 
         return (
             <div className="res-card" style={{backgroundColor : "#f0f0f0"}}>
@@ -2123,6 +2135,14 @@
         ); 
     };
 
+
+
+
+
+
+
+
+
     const Body = () =>{
 
         // const restaurantCards = [];
@@ -2140,7 +2160,7 @@
                     {/* <RestaurentCard resData = {resList[0]}/> */}
 
                {
-                resList.map((restaurant) => (<RestaurentCard key ={restaurant.data.id}resData ={restaurant}/>))
+                resList.map((restaurant) => (<RestaurentCard key ={restaurant.data.id} resData ={restaurant}/>))
                }
                     
 
@@ -2153,6 +2173,13 @@
             </div>
         );
     }
+
+
+
+
+    
+
+
     const AppLayout = () =>{
 
         return (
