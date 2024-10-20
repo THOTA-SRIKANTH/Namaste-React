@@ -19,11 +19,10 @@
  *  - contact
  * 
  */
-
  # react-folder structure
 
 
- # Two  types of export/import
+ # Two types of export/import
 
  - Default export/import
 
