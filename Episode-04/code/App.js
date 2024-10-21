@@ -2145,11 +2145,11 @@
 
     const Body = () =>{
 
-        // const restaurantCards = [];
+        const restaurantCards = [];
 
-        // for(let i=0 ;i<resList.length ;i++){
-        //     restaurantCards.push(<RestaurentCard key={resList[i].data.id}resData={resList[i]}/>)
-        // }
+        for(let i=0 ;i<resList.length ;i++){
+            restaurantCards.push(<RestaurentCard key={resList[i].data.id}resData={resList[i]}/>)
+        }
 
         return(
 
@@ -2159,15 +2159,15 @@
 
                     {/* <RestaurentCard resData = {resList[0]}/> */}
 
-               {
+               {/* {
                 resList.map((restaurant) => (<RestaurentCard key ={restaurant.data.id} resData ={restaurant}/>))
-               }
+               } */}
                     
 
-            {/* {
+            {
                 restaurantCards 
             }
-                     */}
+                    
                
                 </div>
             </div>
